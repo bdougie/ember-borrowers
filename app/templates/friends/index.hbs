@@ -11,8 +11,8 @@
   <tbody>
     {{#each}}
       <tr>
-        <td>{{link-to fillName "friends.show" this}}</td>
-        <td><a href="#" {{ction "delete" this}}>Delete</a></td>
+        <td>{{link-to fullName "friends.show" this}}</td>
+        <td><a href="#" {{action "delete" this}}>Delete</a></td>
       </tr>
       {{/each}}
   </tbody>
