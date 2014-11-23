@@ -1,4 +1,4 @@
-import FriendsBaseController from 'ember';
+import FriendsBaseController from './base';
 
 export default FriendsBaseController.extend({
   actions: {
