@@ -8,7 +8,7 @@ export default Ember.ObjectController.extend({
     'twitter',
     function() {
       return !Ember.isEmpty(this.get('email')) &&
-        !Ember.isEmpty(this.get('firstNAme')) &&
+        !Ember.isEmpty(this.get('firstName')) &&
         !Ember.isEmpty(this.get('lastName')) &&
         !Ember.isEmpty(this.get('twitter'));
     }
@@ -23,6 +23,7 @@ export default Ember.ObjectController.extend({
       } else {
         this.set('errorMessage', 'You have to fill all the fields');
       }
+
       return false;
     },
     cancel: function() {
