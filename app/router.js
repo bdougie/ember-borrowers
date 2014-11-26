@@ -13,6 +13,7 @@ Router.map(function() {
     });
     this.route('edit', { path: ':friend_id/edit' });
   });
+  this.route('articles/index');
 });
 
 export default Router;
