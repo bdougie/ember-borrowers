@@ -1,12 +1,21 @@
 <h1>Friends Index</h1>
-{{! The context here is the controller}}
+
 <h2>Total friends: {{length}}</h2>
 
-<ul>
-  {{#each}}
-    {{! The context here is a friend instance }}
-    <li>
-      {{link-to fullName 'friends.show' this}}
-    </li>
-  {{/each}}
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each}}
+      <tr>
+        <td>{{link-to fullName "friends.show" this}}</td>
+        <td><a href="#" {{action "delete" this}}>Delete</a></td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
