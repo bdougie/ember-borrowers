@@ -20,5 +20,16 @@ app.import('vendor/fontello/font/fontello.woff', {
 
 app.import('bower_components/picnic/releases/v2.min.css');
 app.import('bower_components/moment/moment.js');
+app.import('bower_components/borrowers-dates/index.js', {
+  exports: {
+    'ic-ajax': [
+      'default',
+      'defineFixture',
+      'lookupFixture',
+      'raw',
+      'request',
+    ]
+  }
+});
 
 module.exports = app.toTree();
